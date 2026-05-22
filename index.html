@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Xin Yu Wu - Academic Homepage" />
+  <title>Xin Yu Wu | Academic Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQJ8p7c6QGqA6S4Q2tG9Udt7w7F6M8=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#home" class="brand">Xin Yu Wu</a>
+      <div class="nav-links">
+        <a href="#bio">Bio</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#map">Map</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-card">
+        <div class="avatar">XW</div>
+        <div>
+          <p class="eyebrow">Ph.D. Candidate · State Key Laboratory of Millimeter-Waves</p>
+          <h1>Xin Yu Wu</h1>
+          <p class="subtitle">Liquid crystal beam-scanning antennas · phased arrays · reconfigurable antennas · array synthesis theory</p>
+          <div class="hero-buttons">
+            <a class="button primary" href="mailto:xinyuwu@seu.edu.cn">Email</a>
+            <a class="button" href="#publications">Publications</a>
+            <a class="button" href="#map">Research Map</a>
+          </div>
+        </div>
+      </div>
+      <aside class="info-card">
+        <h3>Affiliation</h3>
+        <p>School of Information Science and Engineering<br>Southeast University, Nanjing, China</p>
+        <h3>Email</h3>
+        <p><a href="mailto:xinyuwu@seu.edu.cn">xinyuwu@seu.edu.cn</a></p>
+        <h3>Profiles</h3>
+        <p class="profile-links">
+          <a href="#" title="Replace with your Google Scholar link">Google Scholar</a>
+          <a href="#" title="Replace with your ORCID link">ORCID</a>
+          <a href="#" title="Replace with your ResearchGate link">ResearchGate</a>
+        </p>
+      </aside>
+    </section>
+
+    <section id="bio" class="section two-column">
+      <div>
+        <h2>Short Bio</h2>
+        <p>Xin Yu Wu is currently a Ph.D. candidate at Southeast University, State Key Laboratory of Millimeter-Waves, supervised by Prof. Zhi Hao Jiang. He received his B.Eng. degree from Northwestern Polytechnical University in 2019. His research focuses on liquid crystal-based beam-scanning antennas, phased array antennas, reconfigurable antennas, and array synthesis theory.</p>
+        <p>He has published more than 10 peer-reviewed journal and conference papers in venues including <em>Advanced Materials</em>, <em>Engineering</em>, and <em>IEEE Transactions on Antennas and Propagation</em>. He has also filed Chinese and U.S. patent applications and serves as a reviewer for IEEE TAP and IEEE AWPL.</p>
+      </div>
+      <div class="stats-grid">
+        <div><strong>10+</strong><span>Publications</span></div>
+        <div><strong>5</strong><span>Patent applications</span></div>
+        <div><strong>3×</strong><span>National Scholarship</span></div>
+        <div><strong>1/125</strong><span>SEU GPA rank</span></div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">03/2021 – Present</div>
+          <div><h3>Southeast University</h3><p>Ph.D. student in Electromagnetic Field and Microwave Technology. Combined Master–Ph.D. program from 09/2019 to 01/2021. GPA: 87.44, Rank 1/125.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">09/2015 – 06/2019</div>
+          <div><h3>Northwestern Polytechnical University</h3><p>B.Eng. in Electronic and Information Engineering. GPA: 90.71, Rank 3/106. Excellent Graduation Thesis.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research Experience</h2>
+      <div class="cards">
+        <article class="card"><h3>2-D Liquid Crystal Phased Array for SatCom</h3><p>Hybrid phase assignment strategy by joint regulation of LCPS and RF chips; 8×8 proof-of-concept design using subarray-level sequential rotation and miniaturized LC phase shifters.</p><span>01/2024 – Present</span></article>
+        <article class="card"><h3>Dual-Linearly Polarized LCPA at Ka-band</h3><p>Compact 1×8 subarray layout for improved space utilization, gain increase, and dual polarization. Demonstrated beam scanning within ±40°.</p><span>06/2022 – 06/2024</span></article>
+        <article class="card"><h3>2-D Circularly Polarized LCRA in K-band</h3><p>48×48 reflectarray based on reflection-type LCPS and CP unit cells, achieving CP beam scanning within ±40° and 31.8 dBic maximum gain.</p><span>07/2021 – 07/2022</span></article>
+        <article class="card"><h3>Array Synthesis & Optimization</h3><p>Generalized sequential rotation theory, top-flat radiation pattern synthesis, Gerchberg–Saxton algorithm, alternating projection method, and genetic-algorithm-based pixelized element design.</p><span>03/2019 – Present</span></article>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Selected Publications</h2>
+      <ol class="pub-list">
+        <li><strong>An ultrathin, fast-response, large-scale liquid-crystal-facilitated multi-functional reconfigurable metasurface for comprehensive wavefront modulation.</strong><br>X. Y. Wu, H. Y. Feng, F. Wan, et al. <em>Advanced Materials</em>, 2024.</li>
+        <li><strong>High-efficiency circularly polarized phased array based on 5-μm thick nematic liquid crystals: design, OTA calibration, and experimental validation.</strong><br>X. Y. Wu, F. Wan, H. Y. Feng, et al. <em>Engineering</em>, 2024.</li>
+        <li><strong>Generalized sequential rotation arrays with full control of dual-circularly-polarized aperture-field distribution based on elliptically-polarized elements.</strong><br>X. Y. Wu, Z. H. Jiang, Y. Zhang, et al. <em>IEEE Transactions on Antennas and Propagation</em>, 2022.</li>
+        <li><strong>Broadband dual-CP multi-stage sequential rotation arrays with independent control of polarizations based on dual-CP magneto-electric dipole elements.</strong><br>W. Zeng, X. Y. Wu, F. Wu, et al. <em>IEEE Transactions on Antennas and Propagation</em>, 2024.</li>
+      </ol>
+      <details>
+        <summary>Conference papers</summary>
+        <ul class="compact-list">
+          <li>Dual-linearly-polarized planar liquid-crystal-based phased array in Ka-band, IEEE APS/URSI, Ottawa, Canada, 2025.</li>
+          <li>Simplified design method of generalized sequential rotation array based on rotation-independent element, PIERS, Chiba, Japan, 2025.</li>
+          <li>A large-scale circular-polarized reflectarray based on liquid crystal in K-band, APMC, Bali, Indonesia, 2024.</li>
+          <li>A wideband liquid crystal-based phase shifter based on loaded differential line in Ku/K-band, IMWS-AMP, Nanjing, China, 2024.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="map" class="section">
+      <h2>Research Map</h2>
+      <p class="section-note">This map summarizes education, research, and academic conference locations. Edit <code>script.js</code> to add more cities or customize the trajectory.</p>
+      <div id="research-map"></div>
+    </section>
+
+    <section id="patents" class="section">
+      <h2>Patents</h2>
+      <ul class="compact-list">
+        <li>Dual polarized liquid crystal phased array based on dual polarized radiation subarray and liquid crystal phase shifter, CN202511598790.2, 2025.</li>
+        <li>An antenna and electronic device, CN202280001038.3 / US 2024/0304995 A1, 2022.</li>
+        <li>A phase calibration method and device for phased array antennas, CN202280000876.9 / US 2024/0396642 A1, 2022.</li>
+        <li>A reflect array antenna and antenna system, CN202210344887.0, 2022.</li>
+        <li>Waveguide probe structure, calibration device and calibration method for antenna array, CN202280003305.0 / US 2024/0426889 A1, 2024.</li>
+      </ul>
+    </section>
+
+    <section id="awards" class="section">
+      <h2>Selected Awards & Honors</h2>
+      <div class="award-grid">
+        <div><strong>National Scholarship</strong><span>2024, 2018, 2017</span></div>
+        <div><strong>IEEE AP-S Fellowship</strong><span>2024</span></div>
+        <div><strong>Best Student Paper Award</strong><span>APMC 2024</span></div>
+        <div><strong>Best Presentation Award</strong><span>ISAP Student Contest 2020</span></div>
+        <div><strong>First Prize</strong><span>Sheng-Yi Cup Microwave and Millimeter-wave Circuit Design Competition, 2024</span></div>
+        <div><strong>First Prize</strong><span>Rhodes & Schwarz Microwave Circuit Design and Measurement Competition, 2022</span></div>
+      </div>
+    </section>
+
+    <section id="service" class="section two-column">
+      <div>
+        <h2>Academic Service</h2>
+        <ul class="compact-list">
+          <li>Reviewer: IEEE Transactions on Antennas and Propagation</li>
+          <li>Reviewer: IEEE Antennas and Wireless Propagation Letters</li>
+          <li>Volunteer: ICMMT 2021, Nanjing, China</li>
+          <li>Volunteer: IMWS-AMP 2020, Online</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Technical Skills</h2>
+        <p><strong>Simulation:</strong> HFSS, CST Studio Suite, AutoCAD, Altium Designer; familiar with Origin, SolidWorks, and Office.</p>
+        <p><strong>Programming:</strong> MATLAB; familiar with Python and C.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-box">
+      <h2>Contact</h2>
+      <p>State Key Laboratory of Millimeter-Waves, School of Information Science and Engineering, Southeast University, Nanjing, China.</p>
+      <p>Email: <a href="mailto:xinyuwu@seu.edu.cn">xinyuwu@seu.edu.cn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Xin Yu Wu. Built with GitHub Pages.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
