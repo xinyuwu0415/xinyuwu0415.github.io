@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+      <a href="#research">Research</a>
+      <a href="#services">Services</a>
+    </nav>
+  </header>
+  <main class="page">
+    {{ content }}
+  </main>
+  <footer class="footer">
+    <p>© {{ site.time | date: '%Y' }} Xin Yu Wu. Last updated: {{ site.time | date: '%Y-%m-%d' }}.</p>
+  </footer>
+</body>
+</html>
