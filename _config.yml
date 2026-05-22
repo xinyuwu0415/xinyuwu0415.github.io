@@ -1,5 +1,8 @@
-
 title: "Xin Yu Wu"
-description: "Academic Homepage"
-theme: minima
+description: "Ph.D. Candidate at Southeast University"
+baseurl: ""
+url: "https://xinyuwu0415.github.io"
 markdown: kramdown
+kramdown:
+  input: GFM
+plugins: []
