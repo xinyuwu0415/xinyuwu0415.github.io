@@ -29,6 +29,7 @@ https://xinyuwu0415.github.io/
 2. 上传到 `assets/img/profile.jpg`
 3. 打开 `index.md`
 4. 找到 placeholder 部分，删除占位框，使用这一行：
+5. 确认
 
 ```markdown
 <img class="avatar" src="assets/img/profile.jpg" alt="Xin Yu Wu">
