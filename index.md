@@ -7,10 +7,9 @@ title: Xin Yu Wu
 
 <div class="hero">
   <div>
-    <!-- Put your profile photo at assets/img/profile.jpg, then replace the placeholder below with the image line. -->
-    <!-- <img class="avatar" src="assets/img/profile.jpg" alt="Xin Yu Wu"> -->
-    <div class="avatar-placeholder">Profile Photo<br>assets/img/profile.jpg</div>
+    <img class="avatar" src="assets/img/profile.jpg" alt="Xin Yu Wu">
   </div>
+</div>
 
   <div>
     <h1>Xin Yu Wu</h1>
