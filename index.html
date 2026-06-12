@@ -89,10 +89,14 @@
   }
   ol.conf li {
     counter-increment: conf-counter;
+    display: flex;           /* 弹性布局 */
+    align-items: flex-start; /* 顶部对齐 */
   }
   ol.conf li::before {
     content: "[C" counter(conf-counter) "] ";
-    font-weight: bold;
+    flex-shrink: 0;          /* 固定宽度不被压缩 */
+    width: 3em;              /* 足够容纳 [J99] 等，可根据实际调整 */
+    font-weight: normal;
     margin-right: 8px;
   }
 
@@ -102,10 +106,14 @@
   }
   ol.journal li {
     counter-increment: journal-counter;
+    display: flex;           /* 弹性布局 */
+    align-items: flex-start; /* 顶部对齐 */
   }
   ol.journal li::before {
     content: "[J" counter(journal-counter) "] ";
-    font-weight: bold;
+    flex-shrink: 0;          /* 固定宽度不被压缩 */
+    width: 3em;              /* 足够容纳 [J99] 等，可根据实际调整 */
+    font-weight: normal;
     margin-right: 8px;
   }
 
@@ -115,10 +123,14 @@
   }
   ol.patent li {
     counter-increment: patent-counter;
+    display: flex;           /* 弹性布局 */
+    align-items: flex-start; /* 顶部对齐 */
   }
   ol.patent li::before {
     content: "[P" counter(patent-counter) "] ";
-    font-weight: bold;
+    flex-shrink: 0;          /* 固定宽度不被压缩 */
+    width: 3em;              /* 足够容纳 [J99] 等，可根据实际调整 */
+    font-weight: normal;
     margin-right: 8px;
   }
 </style>
