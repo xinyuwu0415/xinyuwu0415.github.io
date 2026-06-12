@@ -72,8 +72,46 @@
   <li><b>[2024.06]</b> Published a paper in <i>Advanced Materials</i> on liquid-crystal-facilitated multifunctional reconfigurable metasurfaces.</li>
 </ul>
 
+<style>
+  /* 通用样式：移除默认编号，保留缩进 */
+  ol {
+    list-style: none;
+    padding-left: 1.2em;  /* 保持缩进美观 */
+  }
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  /* ===== Conference Papers 列表：生成 [J1], [J2]... ===== */
+  ol.conf {
+    counter-reset: conf-counter;  /* 独立计数器 */
+  }
+  ol.conf li {
+    counter-increment: conf-counter;
+  }
+  ol.conf li::before {
+    content: "[C" counter(conf-counter) "] ";
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  /* ===== Journal Publications 列表：生成 [C1], [C2]... ===== */
+  ol.journal {
+    counter-reset: journal-counter;
+  }
+  ol.journal li {
+    counter-increment: journal-counter;
+  }
+  ol.journal li::before {
+    content: "[J" counter(journal-counter) "] ";
+    font-weight: bold;
+    margin-right: 8px;
+  }
+</style>
+
 <h2>Journal Publications</h2>
-<ol>
+<ol class="Journal">
   <li>
     An Ultrathin, Fast-Response, Large-Scale Liquid-Crystal-Facilitated Multi-Functional Reconfigurable Metasurface for Comprehensive Wavefront Modulation.<br>
     <b>X. Y. Wu</b>, H. Y. Feng, F. Wan, M. Wei, C. Guo, L. Cai, F. Wu, Z. H. Jiang<sup>*</sup>, L. Kang<sup>*</sup>, W. Hong<sup>*</sup>, and D. H. Werner<sup>*</sup><br>
@@ -103,7 +141,7 @@
 </ol>
 
 <h2>Conference Papers</h2>
-<ol>
+<ol class="conf">
   <li>
     <b>X. Y. Wu</b>, H. Jia, L. Cai, F. Wu, Z. H. Jiang, and W. Hong,
     “Dual-linearly-polarized planar liquid-crystal-based phased array in Ka-band,”
@@ -214,6 +252,8 @@
 <h2>Academic Service</h2>
 <ul>
   <li>Reviewer for <i>IEEE Transactions on Antennas and Propagation</i></li>
+  <li>Reviewer for <i>IEEE Transactions on Microwave Theory and Techniques</i></li>
+  <li>Reviewer for <i>IEEE Open Journal of Antennas and Propagation</i></li>
   <li>Reviewer for <i>IEEE Antennas and Wireless Propagation Letters</i></li>
   <li>Volunteer, <i>ICMMT 2021</i>, Nanjing, China</li>
   <li>Volunteer, <i>IMWS-AMP 2020</i>, Online</li>
